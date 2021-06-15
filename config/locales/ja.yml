@@ -22,7 +22,9 @@ ja:
       title: 'タイトル'
       description: '詳しい説明'
       created_at: 登録日
-      updated_at: 更新日  
+      updated_at: 更新日 
+      edit: 編集
+      delete: 削除 
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
