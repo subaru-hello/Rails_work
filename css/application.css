@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=application.css.map */
+/*
+*= require bootstrap/dist/css/bootstrap.min 
+*= require_tree .
+*= require_self
+*/
+/*# sourceMappingURL=application.css.map */

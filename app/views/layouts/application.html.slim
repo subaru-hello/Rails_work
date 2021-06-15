@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title
+      | Taskleaf
+    meta[name="viewport" content="width=device-width,initial-scale=1"]
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    script[type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"]
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .app-title.navbar.navbar-expand-md.navbar-light.bg-light
+      .navbar-brand Taskleaf
+    .container
+    = yield

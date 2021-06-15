@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA;;;;EAIE",
     "sources": [
-        "../taskleaf/app/assets/stylesheets/tasks.scss"
+        "../app/assets/stylesheets/tasks.scss"
     ],
     "names": [],
     "file": "tasks.css"
