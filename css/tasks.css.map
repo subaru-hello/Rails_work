@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAIA;;;;EAIE",
+    "mappings": "AAGA;;;;EAIE",
     "sources": [
         "../app/assets/stylesheets/tasks.scss"
     ],
