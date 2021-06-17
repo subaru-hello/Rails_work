@@ -1,7 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+現場Rails 4章と5章
+４章で枠組みを作って、5章で実践的な機能をつけています
+正直ここからポートフォリオに結びつけることができるか分からないですが、一から実装することができた喜びがありますね。へへ。
 
 Things you may want to cover:
 
