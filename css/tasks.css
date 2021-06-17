@@ -3,4 +3,7 @@
 *= require_tree .
 *= require_self
 */
+body {
+  margin: 0px 100px;
+}
 /*# sourceMappingURL=tasks.css.map */
