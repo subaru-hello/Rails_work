@@ -59,4 +59,4 @@ gem 'jquery-rails'
 gem 'slim-rails'
 gem 'html2slim'
 gem 'rails-i18n'
-
+gem 'rails_autolink'
