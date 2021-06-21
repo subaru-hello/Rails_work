@@ -19,10 +19,12 @@ table.table.table-hover
  thead.thead-default
   tr
    th= sort_link(@q, :name)
+
    th= Task.human_attribute_name(:name)
    th= Task.human_attribute_name(:created_at)
    th= Task.human_attribute_name(:edit)
    th= Task.human_attribute_name(:delete)
+   th
  tbody
   - @tasks.each do |task|
    tr
@@ -32,3 +34,9 @@ table.table.table-hover
        = link_to '編集', edit_task_path(task), class: 'btn btn-primary mr-3'
      td
        = link_to '削除', task, method: :delete, data: { confirm: "タスク「#{task.name}」を削除します。よろしいですか？"}, class: 'btn btn-danger'
+   
+  = link_to 'エクスポート', tasks_path(format: :csv), class: 'btn btn-primary mb-3'
+  
+  = form_tag import_tasks_path, multipart: true, class: 'mb-3' do
+    = file_field_tag :file
+    = submit_tag "インポート", class: 'btn btn-primary'
