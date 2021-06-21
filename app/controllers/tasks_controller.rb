@@ -5,7 +5,12 @@ class TasksController < ApplicationController
     @q = current_user.tasks.ransack(params[:q])
     # Rails.logger.debug "@q : #{@q.inspect}"
     @tasks = @q.result(distinct: true)
-  end
+
+    respond_to do |format|
+      format.html
+      format.csv{ send_data @tasks.generate_csv, filename: "tasks-#{Time.zone.now.strftime('%Y%m%d%S')}.csv"}
+    end
+    end
 
   def show
   end
