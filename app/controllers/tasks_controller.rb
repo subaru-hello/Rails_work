@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   def index
     @q = current_user.tasks.ransack(params[:q])
     # Rails.logger.debug "@q : #{@q.inspect}"
-    @tasks = @q.result(distinct: true)
+    @tasks = @q.result(distinct: true).page(params[:page])
 
     respond_to do |format|
       format.html
